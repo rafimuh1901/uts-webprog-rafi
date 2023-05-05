@@ -1,0 +1,34 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid black;
+}
+
+.left-nav {
+  display: flex;
+}
+
+.sub-left-nav p {
+  margin: 0;
+}
+
+.right-nav {
+  display: flex;
+}
+
+.sub-right-nav {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.sub-right-nav:hover {
+  background-color: #C6A961;
+}
+
+.sub-right-nav a {
+  text-decoration: none;
+  color: black;
+}
+

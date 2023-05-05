@@ -1,0 +1,13 @@
+.menu-btn {
+  position: absolute;
+  right: 30;
+  bottom: 30;
+  padding: 0.5rem;
+  z-index: 2;
+  border-radius: 0.5rem;
+}
+
+.menu-btn a {
+  text-decoration: none;
+  color: black;
+}

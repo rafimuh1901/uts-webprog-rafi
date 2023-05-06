@@ -26,8 +26,6 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
-        $user = User::where('id', 1)->first();
-        view()->share('activeUser', $user);
         config(['app.locale' => 'id']);
         Carbon::setlocale('id');
     }

@@ -36,16 +36,6 @@ class MenuSeeder extends Seeder
                 'categoryId' => 1
             ],
             [
-                'name' => 'Espresso Macchiato',
-                'price' => '30000',
-                'categoryId' => 1
-            ],
-            [
-                'name' => 'Flat White',
-                'price' => '45000',
-                'categoryId' => 1
-            ],
-            [
                 'name' => 'Freshly Brewed Coffee',
                 'price' => '20000',
                 'categoryId' => 2
@@ -76,21 +66,6 @@ class MenuSeeder extends Seeder
                 'categoryId' => 3
             ],
             [
-                'name' => 'Caramel Java Chip Frappuccino',
-                'price' => '60000',
-                'categoryId' => 3
-            ],
-            [
-                'name' => 'Asian Dolce Frappuccino',
-                'price' => '50000',
-                'categoryId' => 3
-            ],
-            [
-                'name' => 'Caramel Cream Frappuccino',
-                'price' => '50000',
-                'categoryId' => 3
-            ],
-            [
                 'name' => 'Signature Chocolate',
                 'price' => '30000',
                 'categoryId' => 4
@@ -108,11 +83,6 @@ class MenuSeeder extends Seeder
             [
                 'name' => 'Teavana English Breakfast Hot Tea',
                 'price' => '25000',
-                'categoryId' => 4
-            ],
-            [
-                'name' => 'Iced Shaken Lemonade Tea',
-                'price' => '30000',
                 'categoryId' => 4
             ],
         ]);

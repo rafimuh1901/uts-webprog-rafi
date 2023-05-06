@@ -9,17 +9,22 @@ use Illuminate\Support\Facades\Config;
 class HomeController extends Controller
 {
     public function index() {
-        return view('index');
+        // $user = User::where('id', 1)->first();
+        // return view('index', ['user' => $user]);
+        return redirect()->route('home.show', 1);
     }
 
-    public function switchAccount(Request $request) {
-        // return $request['id'];
-        // $id = $request->getContent();
-        // dd($id);
-        // $newUser = User::where('id', '!=', )->first();
-        // view()->share('activeUser', $newUser);
-        // Config::set('global.activeUser', $user);
-        $id = $request['id'];
-        return view('index')->with(compact('id'));
+    public function show($id) {
+        $user = User::where('id', $id)->first();
+        return view('index', ['user' => $user]);
     }
+
+    // public function switchAccount($id) {
+    //     if (isset($id)) {
+    //         $newUser = User::where('id', '!=', $id)->first();
+    //     } else {
+    //         $newUser = User::where('id', 1)->first();
+    //     }
+    //     return view('index', ['user' => $newUser]);
+    // }
 }

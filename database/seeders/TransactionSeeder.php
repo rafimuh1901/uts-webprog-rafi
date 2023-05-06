@@ -29,7 +29,7 @@ class TransactionSeeder extends Seeder
             // Ms.Fei Fei Li 19 Maret
             [
                 'userId' => 2,
-                'menuId' => 10,
+                'menuId' => 5,
                 'completed' => 1,
                 'created_at' => Carbon::create(2023, 3, 19)
             ],
@@ -43,14 +43,14 @@ class TransactionSeeder extends Seeder
             // Mr. Vico Lomar 20 Maret
             [
                 'userId' => 1,
-                'menuId' => 15,
+                'menuId' => 2,
                 'completed' => 1,
                 'created_at' => Carbon::create(2023, 3, 20)
             ],
             // Ms. Fei Fei Li 21 Maret
             [
                 'userId' => 2,
-                'menuId' => 11,
+                'menuId' => 6,
                 'completed' => 1,
                 'created_at' => Carbon::create(2023, 3, 21)
             ],

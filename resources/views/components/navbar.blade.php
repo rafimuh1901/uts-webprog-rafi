@@ -1,7 +1,9 @@
 <link rel="stylesheet" href="{{ asset('assets/css/components/navbar.css') }}">
 <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex">
   <div class="d-flex">
-    <img class="mr-3" src="{{ asset('assets/logo.png') }}" alt="Starbucks Logo" width="52px" height="52px">
+    <a href="{{ route('home.show', ['id' => $user->id]) }}">
+        <img class="mr-3" src="{{ asset('assets/logo.png') }}" alt="Starbucks Logo" width="52px" height="52px">
+    </a>
       @php
         use Carbon\Carbon;
         $now = Carbon::now();
@@ -38,7 +40,7 @@
               <a class="nav-link" href="{{ route('transaction.index', ['id' => $user->id]) }}">Transaction</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Switch Account</a>
+            <a class="nav-link" href="{{ route('switchAccount', ['id' => $user->id]) }}">Switch Account</a>
           </li>
       </ul>
   </div>

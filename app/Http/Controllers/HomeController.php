@@ -19,12 +19,12 @@ class HomeController extends Controller
         return view('index', ['user' => $user]);
     }
 
-    // public function switchAccount($id) {
-    //     if (isset($id)) {
-    //         $newUser = User::where('id', '!=', $id)->first();
-    //     } else {
-    //         $newUser = User::where('id', 1)->first();
-    //     }
-    //     return view('index', ['user' => $newUser]);
-    // }
+    public function switchAccount($id) {
+        if (isset($id)) {
+            $newUser = User::where('id', '!=', $id)->first();
+        } else {
+            $newUser = User::where('id', 1)->first();
+        }
+        return redirect()->route('home.show', $newUser->id);
+    }
 }

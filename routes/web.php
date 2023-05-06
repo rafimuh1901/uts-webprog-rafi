@@ -17,7 +17,7 @@ use App\Http\Controllers\TransactionController;
 */
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/{id}', [HomeController::class, 'show'])->name('home.show');
-// Route::get('/{id}', [HomeController::class, 'switchAccount'])->name('switchAccount');
+Route::get('/switchAccount/{id}', [HomeController::class, 'switchAccount'])->name('switchAccount');
 Route::get('/menu/{id}', [MenuController::class, 'index'])->name('menu.index');
 Route::post('/menu/buy', [MenuController::class, 'buy'])->name('menu.buy');
 Route::get('/transactions/{id}', [TransactionController::class, 'index'])->name('transaction.index');

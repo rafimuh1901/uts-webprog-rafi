@@ -8,7 +8,7 @@
 
 @section('main')
 <div class="container" id="wrapper">
-  <div class="row my-3">
+  <div class="row m-3">
     @foreach($categories as $category)
       <div class="col d-flex justify-content-center">
         @if ($user->level == "Gold")

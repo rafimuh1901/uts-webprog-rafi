@@ -27,4 +27,5 @@
     @endforeach
   </div>
 </div>
+@include('components.menuButton', ['color' => $user->level])
 @endsection

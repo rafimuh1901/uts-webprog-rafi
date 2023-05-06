@@ -19,7 +19,5 @@
   <script>
     let activeUser = {{ Js::from(@$user) }};
     let color = activeUser?.level;
-    console.log("activeUser:", activeUser);
-    console.log("color index:", color);
   </script>
 @endsection

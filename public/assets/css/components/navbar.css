@@ -10,8 +10,13 @@ nav {
   display: flex;
 }
 
+/* .sub-left-nav {
+  display: flex;
+} */
+
 .sub-left-nav p {
   margin: 0;
+  font-weight: bold;
 }
 
 .right-nav {

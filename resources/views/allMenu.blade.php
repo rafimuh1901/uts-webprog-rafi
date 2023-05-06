@@ -12,7 +12,7 @@
     @foreach($categories as $category)
       <div class="col d-flex justify-content-center">
         @if ($user->level == "Gold")
-          <button class="btn" id="category-btn-{{ $category->id }}" value="{{ $category->id }}" style="background-color: #C6A961">{{ $category->name }}</button>
+          <button class="btn" id="category-btn-{{ $category->id }}" value="{{ $category->id }}" style="background-color: #C6A961; color: white">{{ $category->name }}</button>
         @else
           <button class="btn btn-success" id="category-btn-{{ $category->id }}" value="{{ $category->id }}" style="background-color: #006F42; color: white">{{ $category->name }}</button>
         @endif
@@ -76,7 +76,7 @@
                   <p>Rp.${menu.price}</p>
                 </div>
               </div>
-              <button type="submit" onclick="buy(this)" class="btn mt-auto mb-2" id="{{ 'buy-'.$menu->id }}" value={{ $menu->id }} style="background-color: #C6A961">Buy</button>
+              <button type="submit" onclick="buy(this)" class="btn mt-auto mb-2" id="{{ 'buy-'.$menu->id }}" value={{ $menu->id }} style="background-color: #C6A961; color: white">Buy</button>
             </div>
             `
           } else {
@@ -93,7 +93,7 @@
                   <p>Rp.${menu.price}</p>
                 </div>
               </div>
-              <button type="submit" onclick="buy(this)" class="btn mt-auto mb-2" id="{{ 'buy-'.$menu->id }}" value={{ $menu->id }} style="background-color: #006F42">Buy</button>
+              <button type="submit" onclick="buy(this)" class="btn mt-auto mb-2" id="{{ 'buy-'.$menu->id }}" value={{ $menu->id }} style="background-color: #006F42; color: white">Buy</button>
             </div>
             `
           }
@@ -120,7 +120,7 @@
                   <p>Rp.${menu.price}</p>
                 </div>
               </div>
-              <button type="submit" onclick="buy(this)" class="btn mt-auto mb-2" id="{{ 'buy-'.$menu->id }}" value={{ $menu->id }} style="background-color: #C6A961">Buy</button>
+              <button type="submit" onclick="buy(this)" class="btn mt-auto mb-2" id="{{ 'buy-'.$menu->id }}" value={{ $menu->id }} style="background-color: #C6A961; color: white">Buy</button>
             </div>
             `
           } else {
@@ -137,7 +137,7 @@
                   <p>Rp.${menu.price}</p>
                 </div>
               </div>
-              <button type="submit" onclick="buy(this)" class="btn mt-auto mb-2" id="{{ 'buy-'.$menu->id }}" value={{ $menu->id }} style="background-color: #006F42">Buy</button>
+              <button type="submit" onclick="buy(this)" class="btn mt-auto mb-2" id="{{ 'buy-'.$menu->id }}" value={{ $menu->id }} style="background-color: #006F42; color: white">Buy</button>
             </div>
             `
           }
@@ -164,7 +164,7 @@
                   <p>Rp.${menu.price}</p>
                 </div>
               </div>
-              <button type="submit" onclick="buy(this)" class="btn mt-auto mb-2" id="{{ 'buy-'.$menu->id }}" value={{ $menu->id }} style="background-color: #C6A961">Buy</button>
+              <button type="submit" onclick="buy(this)" class="btn mt-auto mb-2" id="{{ 'buy-'.$menu->id }}" value={{ $menu->id }} style="background-color: #C6A961; color: white">Buy</button>
             </div>
             `
           } else {
@@ -181,7 +181,7 @@
                   <p>Rp.${menu.price}</p>
                 </div>
               </div>
-              <button type="submit" onclick="buy(this)" class="btn mt-auto mb-2" id="{{ 'buy-'.$menu->id }}" value={{ $menu->id }} style="background-color: #006F42">Buy</button>
+              <button type="submit" onclick="buy(this)" class="btn mt-auto mb-2" id="{{ 'buy-'.$menu->id }}" value={{ $menu->id }} style="background-color: #006F42; color: white">Buy</button>
             </div>
             `
           }

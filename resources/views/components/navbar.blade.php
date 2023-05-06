@@ -18,14 +18,19 @@
       @endphp
       <div class="sub-left-nav">
           <p>{{ $greetingMessage . ', ' . @$user->name }}</p>
-          <div class="d-flex">
-            <b>
-                <p id="user-level">{{ @$user->level . ' Level' }}</p>
-            </b>
-            <div class="d-flex align-items-center ml-auto">
+          <div class="d-flex align-items-center">
+            <p id="user-level" class="mr-2">{{ @$user->level . ' Level' }}</p>
+            {{-- <b> --}}
+            {{-- </b> --}}
+            {{-- <div> --}}
+            {{-- </div> --}}
+            <div class="d-flex align-items-center mr-2">
               <p class="m-0 mr-2">{{ @$user->points }}</p>
               <img src="{{ asset('assets/star.png') }}" alt="" width="18px" height="18px">
-          </div>
+            </div>
+            <a href="#" class="btn rounded-pill" style="background-color: #0f0e0e; color: white;">
+                Redeem
+            </a>
           </div>
       </div>
   </div>
